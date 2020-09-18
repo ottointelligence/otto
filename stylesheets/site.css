@@ -1,15 +1,95 @@
 body {
-  background-color: #fbc547;
-  color: #333;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir", "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans", "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu", "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 18vh 1rem;
-  text-align: center; }
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "system-ui", "Helvetica Neue", "Arial", sans-serif;
+  flex-direction: column;
+  margin: 0;
+  text-align: center;
+  color: #19191A; }
+
+.circle {
+  position: absolute;
+  width: 75vh;
+  height: 75vh;
+  background-color: red;
+  z-index: 0;
+  border-radius: 50%;
+  background: linear-gradient(-45deg, #FFC97E, #F29BA2, #92CCEE);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+  opacity: 0.8; }
+
+.noise {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background-image: url("/images/noise.png"); }
+
+.logo {
+  position: absolute;
+  width: 40px;
+  left: 40px;
+  top: 40px;
+  z-index: 1; }
+  .logo img {
+    width: 100%; }
+
+h1 {
+  position: relative;
+  z-index: 1;
+  font-size: 32px;
+  margin: 0;
+  padding: 0 20px; }
+
+h2 {
+  position: relative;
+  z-index: 1;
+  font-size: 16px;
+  margin: 0 0 10px 0;
+  color: #96969C; }
 
 a {
-  color: rgba(0, 0, 0, 0.7); }
-  a:focus, a:hover {
-    color: rgba(0, 0, 0, 0.6); }
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+  right: 40px;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px; }
 
-.middleman-logo {
-  margin-bottom: 1rem;
-  width: 10rem; }
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@media only screen and (max-width: 1024px) {
+  .logo {
+    left: 20px;
+    top: 20px; }
+  a {
+    top: 20px;
+    right: 20px; }
+  h1 {
+    font-size: 24px; }
+  .circle {
+    width: 85vw;
+    height: 85vw; } }
