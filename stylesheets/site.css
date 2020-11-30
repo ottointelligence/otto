@@ -11,6 +11,33 @@ body {
   text-align: center;
   color: #19191A; }
 
+#mc_embed_signup {
+  position: relative;
+  z-index: 2; }
+  #mc_embed_signup #mce-responses .response {
+    margin: 10px 0 20px 0;
+    font-size: 14px; }
+  #mc_embed_signup #mce-EMAIL {
+    width: 200px;
+    border-radius: 50px;
+    font-family: "system-ui", "Helvetica Neue", "Arial", sans-serif;
+    padding: 10px 20px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border: none;
+    margin: 30px 0 10px 0; }
+  #mc_embed_signup .button {
+    background-color: #000;
+    color: #fff;
+    border-radius: 50px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer; }
+
 .circle {
   position: absolute;
   width: 75vh;
@@ -91,5 +118,5 @@ a {
   h1 {
     font-size: 24px; }
   .circle {
-    width: 85vw;
-    height: 85vw; } }
+    width: 95vw;
+    height: 95vw; } }
